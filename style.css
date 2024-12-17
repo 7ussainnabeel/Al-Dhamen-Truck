@@ -168,7 +168,7 @@ table.hours {
 	top: -10em;
 	position: relative;
 	left: 2em;
-	margin-bottom: -3em;
+	margin-top: 5em;
 }
 
 thead {
@@ -235,6 +235,7 @@ li.box {
 	);
 	padding-right: 1em;
 	padding-bottom: 4em;
+	
 }
 
 li.box:after {
@@ -272,6 +273,12 @@ li.box:nth-child(3) {
 
 li.box:nth-child(4) {
 	transform: rotate(-2deg);
+	position: relative;
+	top: -1.5em;
+}
+
+li.box:nth-child(5) {
+	transform: rotate(-3deg);
 	position: relative;
 	top: -1.5em;
 }
