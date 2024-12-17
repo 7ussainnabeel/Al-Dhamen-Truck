@@ -58,14 +58,7 @@ body:after {
     position: relative;
     height: 500px; /* Set a fixed height for scrolling */
     overflow-y: auto; /* Enables vertical scrolling */
-    
-    background: url(https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalwhite.png);
-    background-size: cover; /* Ensures the background covers the entire div */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    filter: invert(1); /* Inverts the background if needed */
-    opacity: 0.9; /* Adjusts the transparency of the background */
-}
+   }
 
 .content-box:before {
 	content: "";
@@ -77,6 +70,9 @@ body:after {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	background-size: cover; /* Ensures the background covers the entire div */
+ background-position: center; /* Centers the background image */
+ background-repeat: no-repeat;
 	filter: invert(1);
 	opacity: 0.9;
 }
