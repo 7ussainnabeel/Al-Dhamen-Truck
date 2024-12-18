@@ -82,23 +82,25 @@ h1 {
 	font-weight: normal;
 	padding-top: 0.15em;
 	text-align: center;
+	position: relative;
 }
 
 h1:before {
-	content: "";
-	width: 1.25em;
-	height: 1.25em;
-	position: relative;
-	background: url("Assets/Al Dhamen Logo.jpg") no-repeat center center;
-	background-size: cover;
-	border-radius: 100% 100% 10% 100%;
-	display: inline-block;
-	border: 5px solid #fff;
-	box-shadow: 0 0 5px 0 #fff;
-	margin-left: -0.75em;
-	margin-top: -0.25em;
-	margin-right: 0.25em;
-	transform: rotate(-9deg);
+    content: "";
+    width: 1.25em;
+    height: 1.25em;
+    position: relative; /* Keep it relative for positioning */
+    background-image: url("https://instagram.fbah6-1.fna.fbcdn.net/v/t51.2885-19/467642427_590895123610246_8459730165334452849_n.jpg?stp=dst-jpg_s320x320_tt6&_nc_ht=instagram.fbah6-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=yZ4oyoNYE5UQ7kNvgGK8MYI&_nc_gid=dfc0ad0760b14259ae713c87f369fb78&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYBiaY5OxhE0YsPx6L6LZ8aAGpRZEkzrxz1Uzp5CwHseVQ&oe=67686DD3&_nc_sid=8b3546"); /* Set the new background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 100% 100% 10% 100%;
+    display: inline-block;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px 0 #fff;
+    margin-left: -0.75em;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+    transform: rotate(-9deg);
 }
 
 h2 {
