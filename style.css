@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	font-family: "Annie Use Your Telescope", Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	padding: 5em;
 	box-sizing: border-box;
 }
@@ -155,20 +156,6 @@ svg {
 	left: 0;
 }
 
-table.hours {
-	display: inline-block;
-	transform: rotate(-2deg);
-	padding-left: 4.5em;
-	border-radius: 49%;
-	background: #353535;
-	text-align: center;
-	top: -10em;
-	position: relative;
-	left: 2em;
-	margin-top: 5em;
-	align-content: center;
-}
-
 thead {
 	float: right;
 	width: 2em;
@@ -193,6 +180,17 @@ tbody {
 	font-size: 1.5em;
 	line-height: 1em;
 	text-shadow: -1px -1px 0px #000, -1px -1px 0px #000;
+}
+
+table.hours {
+	display: inline-block;
+	transform: rotate(-2deg);
+	border-radius: 49%;
+	background: #353535;
+	text-align: center;
+	position: relative;
+	font-size: 0.95em;
+	
 }
 
 table.hours svg {
@@ -370,25 +368,69 @@ p.tip:before {
 	}
 
 	h1 {
-		font-size: 4em;
+		font-size: 5em;
+	}
+
+	.content-box {
+	padding: 0 3em 3em;
+	margin-bottom: 3em;
+	border-radius: 0.05em;
+	height: 80em;
+	max-width: 980px;
+	margin: 0 auto;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	}
+
+	dt {
+		font-weight: bold;
+		color: white;
+		float: left;
+		width: 100%;
+		font-size: 2em;
+		line-height: 1.25em;
 	}
 
 	li.box {
 		width: 92%;
 	}
 
+	li.box:nth-child(1) {
+		transform: rotate(-1deg);
+		top: 0;
+	}
+
+	li.box:nth-child(2) {
+		transform: rotate(2deg);
+		top: 0;
+	}
 	li.box:nth-child(3) {
-		transform: rotate(-3deg);
+		transform: rotate(3deg);
 		top: 0;
 	}
 
 	li.box:nth-child(4) {
-		transform: rotate(2deg);
+		transform: rotate(-2deg);
+		top: 0;
+	}
+
+	li.box:nth-child(5) {
+		transform: rotate(3deg);
 		top: 0;
 	}
 
 	table {
 		margin-top: 8em;
+	}
+
+	table.hour{
+		font-size: 0.95em;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
 	}
 }
 
@@ -403,8 +445,20 @@ p.tip:before {
 		overflow: hidden;
 	}
 
+	.content-box {
+		padding: 0 3em 3em;
+		margin-bottom: 3em;
+		border-radius: 0.05em;
+		max-width: 980px;
+		height: 40em;;
+		margin: 0 auto;
+		position: relative;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
 	h1 {
-		font-size: 2.5em;
+		font-size: 6em;
 		text-align: left;
 		padding-left: 0.25em;
 	}
@@ -413,6 +467,15 @@ p.tip:before {
 		margin-top: 0.25em;
 		margin-left: 0.15em;
 		margin-bottom: -0.25em;
+	}
+
+	dt {
+		font-weight: bold;
+		color: white;
+		float: left;
+		width: 100%;
+		font-size: 2em;
+		line-height: 1.25em;
 	}
 
 	address {
@@ -437,12 +500,44 @@ p.tip:before {
 		margin-left: 7.5%;
 	}
 
+	li.box:nth-child(1) {
+		transform: rotate(-1deg);
+		top: 0;
+	}
+
+	li.box:nth-child(2) {
+		transform: rotate(2deg);
+		top: 0;
+	}
+	li.box:nth-child(3) {
+		transform: rotate(3deg);
+		top: 0;
+	}
+
+	li.box:nth-child(4) {
+		transform: rotate(-2deg);
+		top: 0;
+	}
+
+	li.box:nth-child(5) {
+		transform: rotate(3deg);
+		top: 0;
+	}
+
 	table.hours {
-		padding-left: 1em;
-		margin-left: -2em;
+		font-size: 0.95em;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
 	}
 
 	thead {
 		transform: rotate(0deg) translate(0.5em, -1em);
+	}
+	
+	th{
+		font-size: 1.5em;
 	}
 }
