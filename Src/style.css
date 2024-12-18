@@ -86,11 +86,11 @@ h1 {
 
 h1:before {
 	content: "";
+	background: url(https://github.com/7ussainnabeel/Al-Dhamen-Truck/blob/main/Assets/Al-Dhamen-Logo.jpg?raw=true)
+		no-repeat center center;
 	width: 1.25em;
 	height: 1.25em;
 	position: relative;
-	background: url("Assets/Al-Dhamen-Logo.jpg")
-		no-repeat center center;
 	background-size: cover;
 	border-radius: 100% 100% 10% 100%;
 	display: inline-block;
